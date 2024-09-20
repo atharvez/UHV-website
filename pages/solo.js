@@ -10,10 +10,6 @@ export default function Solo() {
         This campaign focuses on spreading awareness about health issues and encouraging healthy lifestyles.
       </p>
       <div className='bg-white rounded-sm max-w-60'>
-          <img 
-          src="image.jpg"
-          className="w-60"
-          />
         <p>Review</p>
       </div>
       <Link href="/activites" className="text-white hover:underline">
