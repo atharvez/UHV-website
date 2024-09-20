@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head'
 import Footer from '../pages/footer';
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
        <Head>
