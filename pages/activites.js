@@ -13,7 +13,7 @@ export default function Blog() {
         {posts.map((post) => (
           <li key={post.id} className="p-4 bg-gray-100 rounded-lg">
             <h3 className="text-xl font-bold">{post.title}</h3>
-            <Link href="/solo">Click</Link>
+            <Link href="/solo">Here</Link>
           </li>
         ))}
       </ul>
