@@ -1,6 +1,6 @@
 // components/Layout.js
 import Link from 'next/link';
-import Head from 'next/head'
+import Head from 'next/head';
 import Footer from '../pages/footer';
 
 export default function Layout({children}) {
