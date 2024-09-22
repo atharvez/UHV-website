@@ -14,9 +14,9 @@ export default function Solo() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-6 text-white">Health Awareness Campaign</h1>
+      <h1 className="text-3xl font-bold mb-6 text-white">Seva Acitivity</h1>
       <p className="mb-4">
-        This campaign focuses on spreading awareness about health issues and encouraging healthy lifestyles.
+          Seva activites done under UHV.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
