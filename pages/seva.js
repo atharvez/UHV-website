@@ -14,7 +14,7 @@ export default function Solo() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-4 text-indigo-700">Seva Acitivity</h1>
+      <h1 className="text-3xl font-bold mb-4 text-indigo-700">Seva Activity</h1>
       <p className="mb-4">
           Seva activites done under UHV.
       </p>
