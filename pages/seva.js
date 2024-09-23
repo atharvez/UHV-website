@@ -16,22 +16,29 @@ export default function Solo() {
     <Layout>
       <h1 className="text-3xl font-bold mb-4 text-indigo-700">Seva Activity</h1>
       <p className="mb-4">
-          Seva activites done under UHV.
+        Seva activities done under UHV.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {photos.map((photo) => (
-          <div key={photo.id} className="bg-indigo-100 rounded-lg p-4 shadow-lg">
+          <div
+            key={photo.id}
+            className="relative bg-indigo-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             {photo.src && (
               <Image
                 src={photo.src}
                 alt={photo.text}
                 width={120}
                 height={80}
-                className="w-full h-auto object-cover rounded-t-lg"
+                className="w-full h-auto object-cover rounded-t-lg transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-50"
               />
             )}
-            <p className="text-center mt-2 text-black font-medium">{photo.text}</p>
+            {/* Dark overlay on hover */}
+            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+            <p className="absolute inset-0 flex items-center justify-center text-center text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+              {photo.text}
+            </p>
           </div>
         ))}
       </div>
@@ -42,4 +49,3 @@ export default function Solo() {
     </Layout>
   );
 }
-
