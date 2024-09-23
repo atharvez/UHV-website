@@ -14,7 +14,7 @@ export default function Solo() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-6 text-white">Health Awareness Campaign</h1>
+      <h1 className="text-3xl font-bold mb-6 text-indigo-700">Health Awareness Campaign</h1>
       <p className="mb-4">
         This campaign focuses on spreading awareness about health issues and encouraging healthy lifestyles.
       </p>

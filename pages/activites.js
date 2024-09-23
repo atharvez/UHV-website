@@ -9,14 +9,12 @@ export default function Blog() {
 
   return (
     <Layout>
-      <h2 className="text-2xl font-semibold">Activities</h2>
+      <h2 className="text-3xl font-bold">Activities</h2>
       <ul className="mt-4 space-y-4">
         {posts.map((post) => (
-          <li key={post.id} className="p-4 bg-gray-100 rounded-lg">
-            <h3 className="text-xl font-bold">{post.title}</h3>
-            {/* Link component directly without <a> tag */}
-            <Link href={`/${post.page}`} className="text-blue-500 hover:underline">
-              View
+          <li key={post.id} className="p-4 bg-indigo-700 rounded-lg">
+            <Link href={`/${post.page}`} className="text-white hover:underline text-xl font-bold">
+              {post.title}
             </Link>
           </li>
         ))}

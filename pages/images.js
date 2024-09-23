@@ -20,10 +20,10 @@ export default function ImagesPage() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-6 text-center text-white">Image Gallery</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-indigo-700">Image Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image) => (
-          <div key={image.id} className="border border-white p-2">
+          <div key={image.id} className="border-2 border-black p-2">
             <Image 
               src={image.src} 
               alt={image.alt} 

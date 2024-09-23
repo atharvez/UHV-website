@@ -14,14 +14,14 @@ export default function Solo() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-6 text-white">Seva Acitivity</h1>
+      <h1 className="text-3xl font-bold mb-4 text-indigo-700">Seva Acitivity</h1>
       <p className="mb-4">
           Seva activites done under UHV.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {photos.map((photo) => (
-          <div key={photo.id} className="bg-white rounded-lg p-4 shadow-lg">
+          <div key={photo.id} className="bg-indigo-100 rounded-lg p-4 shadow-lg">
             {photo.src && (
               <Image
                 src={photo.src}
