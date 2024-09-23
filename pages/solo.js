@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Solo() {
   const photos = [
-    { id: 1, src: '', text: 'Healthy Eating',team : 'Team Members', paragraph: '' },
+    { id: 1, src: '', text: 'Healthy Eating', paragraph: '' },
     { id: 2, src: '', text: 'Exercise Regularly' },
     { id: 3, src: '', text: 'Mental Health' },
     { id: 4, src: '', text: 'Stay Hydrated' },
@@ -21,16 +21,19 @@ export default function Solo() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {photos.map((photo) => (
-          <div key={photo.id} className="bg-white rounded-lg p-4 shadow-lg">
+          <div key={photo.id} className="relative bg-white rounded-lg shadow-lg overflow-hidden group">
             <Image
               src={photo.src}
               alt={photo.text}
               width={200}
               height={100}
-              className="w-full h-auto object-cover rounded-t-lg"
+              className="w-full h-auto object-cover rounded-t-lg transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-50"
             />
-            <p className="text-center mt-2 text-gray-700 font-medium">{photo.text}</p>
-            <p className='text-left mt-2 text-black font-normal'>{photo.paragraph}</p>
+            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+            <p className="absolute inset-0 flex items-center justify-center text-center text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+              {photo.text}
+            </p>
+            <p className="text-left mt-2 text-black font-normal">{photo.paragraph}</p>
           </div>
         ))}
       </div>
@@ -41,3 +44,4 @@ export default function Solo() {
     </Layout>
   );
 }
+
