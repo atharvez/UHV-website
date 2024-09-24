@@ -33,7 +33,7 @@ const ImageSlider = () => {
             <img 
               src={image.src} 
               alt={image.alt} 
-              className="w-full h-60 object-cover rounded-lg shadow-lg" // Fixed height and object-cover for uniform size
+              className="w-full h-60 object-cover rounded-lg shadow-lg" 
             />
           </div>
         ))}
