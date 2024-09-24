@@ -1,13 +1,15 @@
-import { Children } from 'react';
+import React from 'react';
+import ImageSlider from '../components/ImageSlider';
 import Layout from '../components/Layout';
 
 export default function Home() {
   return (
     <Layout>
-    <div src = '/images/pccoe'>
-      <h2 className="text-2xl font-semibold justify-center">Universal Human Values</h2>
-      <p className="mt-2 text-blue-700">This page is about the UHV Activites done by students of SY B.Tech Computer Engineering Regional Language.</p>
-      </div>
-      </Layout>
+      <div>
+        <h1 className='text-2xl font-bold'>Welcome to Universal Human Values</h1>
+        <p>Explore our UHV activities and content.</p>
+        <ImageSlider />
+        </div>
+    </Layout>
   );
 }
