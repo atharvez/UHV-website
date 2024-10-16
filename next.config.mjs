@@ -2,7 +2,6 @@
 const nextConfig = {
   images: {
     domains: ['i.imgur.com'], // Add Imgur to the list of allowed domains
-
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,7 +17,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'blogimage.vantagefit.io',
+        hostname: 'blogimage.vantagefit.io', // Add this line
         port: '',
         pathname: '/**', // Allow all paths
       },
@@ -27,4 +26,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-
