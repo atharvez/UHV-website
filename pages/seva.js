@@ -4,12 +4,16 @@ import Image from 'next/image';
 
 export default function Solo() {
   const photos = [
-    { id: 1, src: 'https://blogimage.vantagefit.io/vfitimages/2021/06/Employee-Health.png', text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.' },
-    { id: 2, src: 'https://via.placeholder.com/1920x720.png?text=Healthy+Eating', text: 'Healthy Eating' },
-    { id: 3, src: 'https://via.placeholder.com/1920x720.png?text=Regular+Exercise', text: 'Regular Exercise' },
-    { id: 4, src: 'https://via.placeholder.com/1920x720.png?text=Mental+Health', text: 'Mental Health' },
-    { id: 5, src: 'https://via.placeholder.com/1920x720.png?text=Stay+Hydrated', text: 'Stay Hydrated' },
-    { id: 6, src: 'https://via.placeholder.com/1920x720.png?text=Sleep+Well', text: 'Sleep Well' },
+    { id: 1, src: 'https://imgur.com/ClZVm8e', text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.' },
+    { id: 2, src: 'https://imgur.com/wIjGIve', text: 'Healthy Eating' },
+    { id: 3, src: 'https://imgur.com/RT4wgvp', text: 'Regular Exercise' },
+    { id: 4, src: 'https://imgur.com/qOzQzr2', text: 'Mental Health' },
+    { id: 5, src: 'https://imgur.com/3NTxT0w', text: 'Stay Hydrated' },
+    { id: 6, src: 'https://imgur.com/t1mCs6j', text: 'Sleep Well' },
+    { id: 7, src: 'https://imgur.com/GtO5J9c', text: 'Sleep Well' },
+    { id: 8, src: 'https://imgur.com/WliUAJt', text: 'Sleep Well' },
+    { id: 9, src: 'https://imgur.com/PMhQG4i', text: 'Sleep Well' },
+    { id: 10, src: 'https://imgur.com/bFPbW2E', text: 'Sleep Well' },
   ];
 
   return (
