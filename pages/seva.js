@@ -4,16 +4,16 @@ import Image from 'next/image';
 
 export default function Solo() {
   const photos = [
-    { id: 1, src: 'https://i.imgur.com/ClZVm8e', text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.' },
-    { id: 2, src: 'https://i.imgur.com/wIjGIve', text: 'Healthy Eating' },
-    { id: 3, src: 'https://i.imgur.com/RT4wgvp', text: 'Regular Exercise' },
-    { id: 4, src: 'https://i.imgur.com/qOzQzr2', text: 'Mental Health' },
-    { id: 5, src: 'https://i.imgur.com/3NTxT0w', text: 'Stay Hydrated' },
-    { id: 6, src: 'https://i.imgur.com/t1mCs6j', text: 'Sleep Well' },
-    { id: 7, src: 'https://i.imgur.com/GtO5J9c', text: 'Sleep Well' },
-    { id: 8, src: 'https://i.imgur.com/WliUAJt', text: 'Sleep Well' },
-    { id: 9, src: 'https://i.imgur.com/PMhQG4i', text: 'Sleep Well' },
-    { id: 10, src: 'https://i.imgur.com/bFPbW2E', text: 'Sleep Well' },
+    { id: 1, src: 'https://i.imgur.com/ClZVm8e.jpg', text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.' },
+    { id: 2, src: 'https://i.imgur.com/wIjGIve.jpg', text: 'Healthy Eating' },
+    { id: 3, src: 'https://i.imgur.com/RT4wgvp.jpg', text: 'Regular Exercise' },
+    { id: 4, src: 'https://i.imgur.com/qOzQzr2.jpg', text: 'Mental Health' },
+    { id: 5, src: 'https://i.imgur.com/3NTxT0w.jpg', text: 'Stay Hydrated' },
+    { id: 6, src: 'https://i.imgur.com/t1mCs6j.jpg', text: 'Sleep Well' },
+    { id: 7, src: 'https://i.imgur.com/GtO5J9c.jpg', text: 'Sleep Well' },
+    { id: 8, src: 'https://i.imgur.com/WliUAJt.jpg', text: 'Sleep Well' },
+    { id: 9, src: 'https://i.imgur.com/PMhQG4i.jpg', text: 'Sleep Well' },
+    { id: 10, src: 'https://i.imgur.com/bFPbW2E.jpg', text: 'Sleep Well' },
   ];
 
   return (
