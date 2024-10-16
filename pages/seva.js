@@ -6,7 +6,7 @@ export default function Solo() {
   const photos = [
     {
       id: 1,
-      src: 'https://i.imgur.com/ClZVm8e.jpg', // Direct image link from Imgur
+      src: 'https://i.imgur.com/ClZVm8e.jpg', 
       text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.'
     }
   ];
