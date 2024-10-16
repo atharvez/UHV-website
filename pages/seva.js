@@ -1,20 +1,42 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import Image from 'next/image';
 
 export default function Solo() {
-  const photos = [
-    { id: 1, src: 'https://i.imgur.com/ClZVm8e.jpg', text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.' },
-    { id: 2, src: 'https://i.imgur.com/wIjGIve.jpg', text: 'Healthy Eating' },
-    { id: 3, src: 'https://i.imgur.com/RT4wgvp.jpg', text: 'Regular Exercise' },
-    { id: 4, src: 'https://i.imgur.com/qOzQzr2.jpg', text: 'Mental Health' },
-    { id: 5, src: 'https://i.imgur.com/3NTxT0w.jpg', text: 'Stay Hydrated' },
-    { id: 6, src: 'https://i.imgur.com/t1mCs6j.jpg', text: 'Sleep Well' },
-    { id: 7, src: 'https://i.imgur.com/GtO5J9c.jpg', text: 'Sleep Well' },
-    { id: 8, src: 'https://i.imgur.com/WliUAJt.jpg', text: 'Sleep Well' },
-    { id: 9, src: 'https://i.imgur.com/PMhQG4i.jpg', text: 'Sleep Well' },
-    { id: 10, src: 'https://i.imgur.com/bFPbW2E.jpg', text: 'Sleep Well' },
+  const embeds = [
+    {
+      id: 1,
+      html: `
+        <blockquote class="imgur-embed-pub" lang="en" data-id="ClZVm8e">
+          <a href="https://imgur.com/ClZVm8e">View post on imgur.com</a>
+        </blockquote>
+      `,
+      text: 'Health awareness campaigns play a crucial role in educating communities about healthy lifestyles. By promoting topics like nutrition, exercise, and mental well-being, these initiatives empower individuals to make informed choices. Ultimately, fostering a culture of health can lead to reduced disease rates and improved quality of life for all.'
+    },
+    {
+      id: 2,
+      html: `
+        <blockquote class="imgur-embed-pub" lang="en" data-id="wIjGIve">
+          <a href="https://imgur.com/wIjGIve">Healthy Eating on imgur.com</a>
+        </blockquote>
+      `,
+      text: 'Healthy Eating'
+    },
+    // Add more embeds as needed
   ];
+
+  // Ensure the Imgur embed script is loaded dynamically
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '//s.imgur.com/min/embed.js';
+    script.async = true;
+    script.charset = 'utf-8';
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <Layout>
@@ -24,23 +46,15 @@ export default function Solo() {
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {photos.map((photo) => (
-          <div
-            key={photo.id}
-            className="relative bg-indigo-100 rounded-lg shadow-lg overflow-hidden group"
-          >
-            {photo.src && (
-              <Image
-                src={photo.src}
-                alt={photo.text}
-                width={120}
-                height={80}
-                className="w-full h-auto object-cover rounded-t-lg transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-50"
-              />
-            )}
+        {embeds.map((embed) => (
+          <div key={embed.id} className="relative bg-indigo-100 rounded-lg shadow-lg overflow-hidden group">
+            <div
+              className="w-full h-auto"
+              dangerouslySetInnerHTML={{ __html: embed.html }}
+            />
             <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
             <p className="absolute inset-0 flex items-center justify-center text-center text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
-              {photo.text}
+              {embed.text}
             </p>
           </div>
         ))}
