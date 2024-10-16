@@ -20,6 +20,12 @@ const nextConfig = {
         port: '',
         pathname: '/**', // Allow all paths
       },
+module.exports = {
+  images: {
+    domains: ['i.imgur.com'], 
+  },
+}
+
     ],
   },
 };
