@@ -26,7 +26,7 @@ export default function Solo() {
     },
     {
       id: 5,
-      src: 'https://i.imgur.com/3NTxT0w.jpg',
+      src: 'https://i.imgur.com/8bP2cAQ.jpg',
       text: 'We had a wonderful time at the goshala during our seva activity! Welcomed warmly by the family, we spent the evening feeding cows, cleaning their shelters, and ensuring they had fresh water. We also learned about the Gobar gas plant and the use of cow dung. The experience fostered teamwork, laughter, and interesting stories from the owners. It was a fulfilling experience, and we look forward to returning to strengthen our bond with the animals and each other!',
     },
     {
