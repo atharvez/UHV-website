@@ -1,29 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['i.imgur.com'], // Add Imgur to the list of allowed domains
+    domains: ['i.imgur.com'], 
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'assets.xboxservices.com',
         port: '',
-        pathname: '/**', // Allow all paths
+        pathname: '/**', 
       },
       {
         protocol: 'https',
         hostname: 'via.placeholder.com',
         port: '',
-        pathname: '/**', // Allow all paths
+        pathname: '/**', 
       },
       {
         protocol: 'https',
-        hostname: 'blogimage.vantagefit.io', // Add this line
+        hostname: 'blogimage.vantagefit.io',
         port: '',
-        pathname: '/**', // Allow all paths
+        pathname: '/**', 
       },
     ],
   },
 };
 
-// Use `export default` instead of `module.exports` for ES modules
 export default nextConfig;
