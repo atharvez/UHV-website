@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // This allows domains from which external images can be fetched
     domains: ['i.imgur.com'], // Add Imgur to the list of allowed domains
+
+    // Use remotePatterns to configure advanced control for images
     remotePatterns: [
       {
         protocol: 'https',
