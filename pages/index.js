@@ -9,11 +9,10 @@ export default function Home() {
         <h1 className="text-2xl font-bold text-indigo-700 mb-4">Welcome to Universal Human Values</h1>
         <p className="text-gray-600 mb-10">Explore our UHV activities and content.</p>
         
-        <div className="py-10 w-full">
+        <div className="w-full">
           <ImageSlider />
         </div>
 
-        {/* About Faculty Section */}
         <div className="py-10">
           <h2 className="text-xl font-bold text-gray-800 mb-4">About the Faculty</h2>
         </div>
@@ -23,7 +22,7 @@ export default function Home() {
             <img
               src="https://i.imgur.com/sq4sx4W.jpeg"
               alt="Faculty Image"
-              className="w-32 h-32 rounded-full object-cover shadow-md" // Fixed size for the photo
+              className="w-32 h-32 rounded-full object-cover shadow-md" 
             />
             <div>
               <h3 className="text-xl font-semibold text-indigo-600">Dr. Kaustubh Jadhav</h3>
