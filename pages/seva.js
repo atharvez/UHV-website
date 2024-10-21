@@ -49,6 +49,11 @@ export default function Solo() {
       src: 'https://i.imgur.com/bFPbW2E.jpg',
       text: 'It was one of the saddest experiences we have had, seeing the elderly suffer from loneliness. It was clear they deeply missed their loved ones—some longed for their children, others for their grandchildren. Despite the sadness, the positive side was that we had the opportunity to serve them, spend time with them, and offer some comfort. It was a truly rewarding experience.',
     },
+    {
+      id: 10,
+      src: 'https://i.imgur.com/UtSXngW.jpeg',
+      text: 'Our group, Hands of Harmony, organized a seva activity at a nearby Vridh Ashram under the UHV initiative. We engaged the elderly in conversations, activities, and distributed essentials, deepening our compassion and respect while bridging generational gaps.',
+    },
 
   ];
 

@@ -21,9 +21,9 @@ export default function Layout({ children }) {
           <Link href="/activites" className="text-white font-bold rounded-full border-2 border-white px-2 py-1 md:px-4 md:py-2 hover:bg-white hover:text-black transition-shadow">
             Activities
           </Link>
-          <Link href="/images" className="text-white font-bold rounded-full border-2 border-white px-2 py-1 md:px-4 md:py-2 hover:bg-white hover:text-black transition-shadow">
+        {/* <Link href="/images" className="text-white font-bold rounded-full border-2 border-white px-2 py-1 md:px-4 md:py-2 hover:bg-white hover:text-black transition-shadow">
             Images
-          </Link>
+          </Link> */}
         </nav>
       </header>
 
