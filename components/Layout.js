@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Footer from '../pages/footer';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Layout({ children }) {
   return (
