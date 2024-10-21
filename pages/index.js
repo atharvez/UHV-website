@@ -17,7 +17,7 @@ export default function Home() {
           <h2 className="text-xl font-bold text-gray-800 mb-4">About the Faculty</h2>
         </div>
         
-        <div className="max-w-md mx-auto p-6 bg-violet-400 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="max-w-md mx-auto p-6 bg-violet-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <div className="flex items-center space-x-6">
             <img
               src="https://i.imgur.com/sq4sx4W.jpeg"
