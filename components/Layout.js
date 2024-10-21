@@ -31,6 +31,7 @@ export default function Layout({ children }) {
         <div className="max-w-full md:max-w-7xl mx-auto sm:px-4 md:px-6 lg:px-8">
           <div className="bg-white shadow sm:rounded-lg p-4 md:p-6">
             {children}
+            <Analytics />
           </div>
         </div>
       </main>
